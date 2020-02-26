@@ -33,6 +33,7 @@ public class InventoryController : MonoBehaviour
             }
         }
 
+        /*
         //lol player controller for testing please remove.
         if (Input.GetKey("w"))
         {
@@ -50,7 +51,7 @@ public class InventoryController : MonoBehaviour
         } else
         {
             mybod.velocity = new Vector2(0, 0);
-        }
+        }*/
 
         dropNextItem();
     }

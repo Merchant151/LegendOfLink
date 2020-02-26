@@ -5,16 +5,20 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     public int ItemID;
-    public Color itemColor;
+    //public Color itemColor; for item testing
     SpriteRenderer myRen;
 
     // Start is called before the first frame update
     void Start()
     {
         myRen = gameObject.GetComponent<SpriteRenderer>();
+
+        /*
+        //random color for item testing
         float r = (float)Random.Range(0, 255);
         //Debug.Log("float R = " + r);
         myRen.color = new Color(r/255, (float)Random.Range(0, 255) / 255, (float)Random.Range(0, 255) / 255);
+        */    
     }
 
     // Update is called once per frame
@@ -22,7 +26,8 @@ public class ItemScript : MonoBehaviour
     {
         
     }
-/*
+
+    /* this is commented out because it belongs in the controller
     private void OnTriggerStay2D(Collider2D collision)
     {
         //Debug.Log("Hey I bumped into something");
