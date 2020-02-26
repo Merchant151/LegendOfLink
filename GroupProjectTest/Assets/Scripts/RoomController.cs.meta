@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9e004053c1a0fb64797892b177937f60
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - stepSound: {fileID: 8300000, guid: 36fefe5289a770544ac61529324ef55d, type: 3}
+  - targetBreakSound: {fileID: 8300000, guid: a2a27cc7d1b39354caf8b23fa47a3c49, type: 3}
+  - clearSound: {fileID: 8300000, guid: 97d9305ac22af824ea8873ef4b4e6ef0, type: 3}
+  - resetSound: {fileID: 8300000, guid: e20a51f5898868b41a3425ec505bae9c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
