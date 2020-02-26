@@ -5,8 +5,12 @@ using UnityEngine;
 public class BossController : MonoBehaviour
 {
     Animator bossAnim;
-    Rigidbody2D bossBody;
-    BoxCollider2D weakPoint;
+
+    Rigidbody bossBody;
+    BoxCollider weakPoint;
+    public AudioClip bossHit;
+
+    AudioSource bossTakeDamage;
 
     int bossHitPoints = 100;
 
@@ -16,7 +20,7 @@ public class BossController : MonoBehaviour
     float yDownBounds = -1.5f;
 
     float waitTime;
-
+    bool tailMove = false;
     float randomMovement;
     float h;
     float v;
@@ -26,8 +30,10 @@ public class BossController : MonoBehaviour
     void Start()
     {
         bossAnim = GetComponent<Animator>();
-        bossBody = GetComponent<Rigidbody2D>();
-        weakPoint = GetComponent<BoxCollider2D>();
+        
+        bossBody = GetComponent<Rigidbody>();
+        weakPoint = GetComponent<BoxCollider>();
+        bossTakeDamage = GetComponent<AudioSource>();
 
         InvokeRepeating("MoveBoss", 4, Random.Range(2, 4));
     }
@@ -84,6 +90,12 @@ public class BossController : MonoBehaviour
 
         }
 
+        if(bossHitPoints <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+        
     }
 
     void MoveBoss()
@@ -109,6 +121,20 @@ public class BossController : MonoBehaviour
         else
         {
             
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        bossHitPoints -= 5;
+        print(bossHitPoints);
+        if (bossHitPoints > 0)
+        {
+            bossTakeDamage.PlayOneShot(bossHit);
+        }
+        else
+        {
+
         }
     }
 }
