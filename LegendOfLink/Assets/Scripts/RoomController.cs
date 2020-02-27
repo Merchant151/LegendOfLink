@@ -21,6 +21,8 @@ public class RoomController : MonoBehaviour
     public AudioClip clearSound;
     public AudioClip resetSound;
 
+    public GameObject key;
+
     //sound functions that switches can call
     public void PlayStep()
     {
@@ -29,7 +31,7 @@ public class RoomController : MonoBehaviour
     public void RoomClear()
     {
         myAudio.PlayOneShot(clearSound);
-        myAudio.Stop();
+        //myAudio.Stop();
     }
     public void ResetAlert()
     {
@@ -51,6 +53,7 @@ public class RoomController : MonoBehaviour
             //grab root switch to check children
             rootSwitch = GameObject.Find("t1");
         }
+        door = transform.Find("door").gameObject;
     }
 
     // Update is called once per frame
@@ -62,7 +65,13 @@ public class RoomController : MonoBehaviour
             if (lastSwitch.GetComponent<SwitchToggle>().on)
             {
                 roomClear = true;
-                RoomClear();
+                //RoomClear();
+                if (transform.Find("key(Clone)") == null && !door.GetComponent<DoorController>().open)
+                {
+                    Vector3 pos = new Vector3(-4, 4, 0);
+                    GameObject keyA = Instantiate(key, pos, transform.rotation);
+                    keyA.transform.parent = transform;
+                }
             }
         }
         else
@@ -79,7 +88,12 @@ public class RoomController : MonoBehaviour
                     else
                     {
                         roomClear = true;
-                        RoomClear();
+                        //RoomClear();
+                        if (transform.Find("key(Clone)") == null && !door.GetComponent<DoorController>().open) {
+                            Vector3 pos = new Vector3(0, 8, 0);
+                            GameObject keyA = Instantiate(key, pos, transform.rotation);
+                            keyA.transform.parent = transform;
+                        }
                     }
                 }
             }

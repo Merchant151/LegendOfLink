@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class KeyController : MonoBehaviour
 {
-    Sprite[] tiles;
-    GameObject room;
+    RoomController roomC;
     
     void Start()
     {
-        //tiles = Resources.LoadAll<Sprite>("dungeonTiles");
-        room = transform.parent.gameObject;
+        roomC = transform.root.GetComponent<RoomController>();
+        roomC.RoomClear();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (room.GetComponent<RoomController>().roomClear)
+        /*if (room.GetComponent<RoomController>().roomClear)
         {
             this.GetComponent<SpriteRenderer>().enabled = true;
         }
         else
         {
             this.GetComponent<SpriteRenderer>().enabled = false;
-        }
+        }*/
     }
 }

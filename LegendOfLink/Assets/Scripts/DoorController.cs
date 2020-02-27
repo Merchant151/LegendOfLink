@@ -10,6 +10,8 @@ public class DoorController : MonoBehaviour
     GameObject room;
     BoxCollider doorBox;
 
+    public bool open;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class DoorController : MonoBehaviour
         tiles = Resources.LoadAll<Sprite>("dungeonTiles");
         room = transform.parent.gameObject;
         doorBox = GetComponent<BoxCollider>();
+        open = false;
     }
 
     // Update is called once per frame
@@ -48,12 +51,14 @@ public class DoorController : MonoBehaviour
                 {
                     this.GetComponent<SpriteRenderer>().sprite = tiles[346];
                     doorBox.enabled = false;
+                    open = true;
                     Destroy(item);
                 }
                 else
                 {
                     this.GetComponent<SpriteRenderer>().sprite = tiles[338];
                     doorBox.enabled = true;
+                    open = false;
                 }
             }
         }
