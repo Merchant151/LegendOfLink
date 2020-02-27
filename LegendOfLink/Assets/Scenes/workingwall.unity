@@ -124,11 +124,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Link
       objectReference: {fileID: 0}
-    - target: {fileID: 156393737682738722, guid: 5ad85f209eb934a4f8dea3583d78d1b9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 156393737682738723, guid: 5ad85f209eb934a4f8dea3583d78d1b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -183,16 +178,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668467598031387852, guid: 5ad85f209eb934a4f8dea3583d78d1b9,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668467598031387852, guid: 5ad85f209eb934a4f8dea3583d78d1b9,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.0001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ad85f209eb934a4f8dea3583d78d1b9, type: 3}
