@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638713146825867305}
-  - component: {fileID: 638713146825867310}
+  - component: {fileID: 5655679680423655122}
   m_Layer: 0
   m_Name: wallU1
   m_TagString: Untagged
@@ -31,32 +31,19 @@ Transform:
   m_Father: {fileID: 638713146926732815}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &638713146825867310
-BoxCollider2D:
+--- !u!65 &5655679680423655122
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713146825867311}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.25, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 5.25, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &638713146926732812
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638713147087829526}
-  - component: {fileID: 638713147087829527}
+  - component: {fileID: 1358236052049676724}
   m_Layer: 0
   m_Name: wallL
   m_TagString: Untagged
@@ -123,32 +110,19 @@ Transform:
   m_Father: {fileID: 638713146926732815}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!61 &638713147087829527
-BoxCollider2D:
+--- !u!65 &1358236052049676724
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713147087829524}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 13, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &638713147604343282
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638713147604343276}
-  - component: {fileID: 638713147604343277}
+  - component: {fileID: 6322575603909475280}
   m_Layer: 0
   m_Name: wallU2
   m_TagString: Untagged
@@ -180,32 +154,19 @@ Transform:
   m_Father: {fileID: 638713146926732815}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &638713147604343277
-BoxCollider2D:
+--- !u!65 &6322575603909475280
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713147604343282}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.75, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 5.75, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &638713148109020719
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638713148109020713}
-  - component: {fileID: 638713148109020718}
+  - component: {fileID: 3509937495569252462}
   m_Layer: 0
   m_Name: wallR
   m_TagString: Untagged
@@ -237,32 +198,19 @@ Transform:
   m_Father: {fileID: 638713146926732815}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!61 &638713148109020718
-BoxCollider2D:
+--- !u!65 &3509937495569252462
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713148109020719}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 13, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &638713148144686471
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638713148144686465}
-  - component: {fileID: 638713148144686470}
+  - component: {fileID: 5565803356741226625}
   m_Layer: 0
   m_Name: wallD
   m_TagString: Untagged
@@ -294,29 +242,16 @@ Transform:
   m_Father: {fileID: 638713146926732815}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &638713148144686470
-BoxCollider2D:
+--- !u!65 &5565803356741226625
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713148144686471}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 13, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

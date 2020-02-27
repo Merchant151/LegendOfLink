@@ -56,7 +56,7 @@ public class SwitchToggle : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         //first room
         if (transform.root.name == "Room1")

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
-    Rigidbody2D mybod;
+    Rigidbody mybod;
     public GameObject[] items;
 
     int emptySlot;
@@ -16,7 +16,7 @@ public class InventoryController : MonoBehaviour
     {
         items = new GameObject[5];
 
-        mybod = gameObject.GetComponent<Rigidbody2D>();
+        mybod = gameObject.GetComponent<Rigidbody>();
         activeClock = false;
     }
 
@@ -75,7 +75,7 @@ public class InventoryController : MonoBehaviour
         activeClock = true;
         timer = 0;
     }
-        private void OnTriggerStay2D(Collider2D collision)
+        private void OnTriggerStay(Collider collision)
         {
             //Debug.Log("Hey I bumped into something");
             if (collision.tag == "Item")
