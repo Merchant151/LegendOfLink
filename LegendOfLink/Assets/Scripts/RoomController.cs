@@ -90,7 +90,7 @@ public class RoomController : MonoBehaviour
                         roomClear = true;
                         //RoomClear();
                         if (transform.Find("key(Clone)") == null && !door.GetComponent<DoorController>().open) {
-                            Vector3 pos = new Vector3(0, 8, 0);
+                            Vector3 pos = new Vector3(-5, 13, 0);
                             GameObject keyA = Instantiate(key, pos, transform.rotation);
                             keyA.transform.parent = transform;
                         }

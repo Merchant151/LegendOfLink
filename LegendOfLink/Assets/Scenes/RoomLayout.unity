@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2760d7ca8c002e34e892c3b33b9aa656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: 0
 --- !u!212 &23227555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1692,7 +1693,7 @@ MonoBehaviour:
   roomType: 3
   roomClear: 0
   stepSound: {fileID: 8300000, guid: 36fefe5289a770544ac61529324ef55d, type: 3}
-  clearSound: {fileID: 8300000, guid: 97d9305ac22af824ea8873ef4b4e6ef0, type: 3}
+  clearSound: {fileID: 8300000, guid: 148c2b04fca16284ca76fb61e335a5da, type: 3}
   resetSound: {fileID: 8300000, guid: e20a51f5898868b41a3425ec505bae9c, type: 3}
   key: {fileID: 2568368985293677967, guid: c59c5b6867d319f40859f54be29bce5f, type: 3}
 --- !u!4 &845123580
@@ -3800,6 +3801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2760d7ca8c002e34e892c3b33b9aa656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: 0
 --- !u!65 &1992709396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4201,7 +4203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638713147741833701}
   m_LocalRotation: {x: -0, y: -0, z: 0.70703334, w: 0.7071802}
-  m_LocalPosition: {x: 4.05, y: -0.67, z: -5}
+  m_LocalPosition: {x: 4.05, y: -0.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 638713147575443392}
