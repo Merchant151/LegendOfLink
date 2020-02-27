@@ -14,10 +14,10 @@ public class BossController : MonoBehaviour
 
     int bossHitPoints = 100;
 
-    float xLeftBounds = -7.5f;
-    float xRightBounds = 7.5f;
-    float yUpBounds = 2.5f;
-    float yDownBounds = -1.5f;
+    float xLeftBounds = -23.38f; //-24.88
+    float xRightBounds = -10.48f; //-9.88
+    float yUpBounds = 19.9f; //18.9
+    float yDownBounds = 10.9f; //14.9
 
     float waitTime;
     bool tailMove = false;
